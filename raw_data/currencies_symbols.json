@@ -1,0 +1,17 @@
+[
+  {"L":["ALL","HNL","RON"]},
+  {"$":["CAD","ARS", "AUD", "CLP", "CUC", "MXN", "SRD"]},
+  {"B$":["BND", "BSD"]},
+  {"P":["BWP", "MOP"]},
+  {"Br":["BYR", "ETB"]},
+  {"F": ["CDF", "XPF"]},
+  {"\u00a5": ["CNY", "JPY"]},
+  {"kr": ["DKK", "ISK", "NOK", "SEK"]},
+  {"\u00a3": ["GBP", "EGP", "FKP", "GIP", "LBP", "SHP"]},
+  {"CFA": ["GQE", "XAF", "XOF"]},
+  {"W": ["KPW", "KRW"]},
+  {"Rs": ["LKR", "MUR"]},
+  {"K":["MMK", "PGK"]},
+  {"R":["RUB", "ZAR"]},
+  {"SR": ["SAR", "SCR"]}
+]
