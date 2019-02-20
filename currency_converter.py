@@ -142,8 +142,7 @@ class Converter:
             data['symbol_currencies'] = {}
             self.__add_available_currencies_for_the_symbol(self.output_symbol, data)
 
-        json_data = json.dumps(data, indent=4, sort_keys=True)
-        return json_data
+        return data
 
 
 def internet_on():

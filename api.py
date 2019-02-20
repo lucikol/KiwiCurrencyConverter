@@ -5,7 +5,7 @@ Author: Lucie Koláriková
 Date: February 2019
 """
 
-from flask import request, Flask
+from flask import request, Flask, jsonify
 import currency_converter as cc
 
 app = Flask(__name__)  # Creates the Flask application object
@@ -27,7 +27,7 @@ def home():
     converter = cc.Converter(amount, input_currency, output_currency)
     try:
         # Convert the input currency to output currency
-        return converter.convert()
+        return jsonify(converter.convert())
     except cc.RatesNotAvailableException as e:
         # Data for this conversion is not available
         return e.__str__()

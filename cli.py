@@ -8,6 +8,7 @@ Date: February 2019
 import getopt
 import sys
 import currency_converter as cc
+import json
 
 
 def arguments_parse():
@@ -57,7 +58,8 @@ def main():
     # print(converter.__str__())
 
     try:
-        print(converter.convert())
+        json_data = json.dumps(converter.convert(), indent=4, sort_keys=True)
+        print(json_data)
     except cc.RatesNotAvailableException as e:
         print(e.__str__())
 
